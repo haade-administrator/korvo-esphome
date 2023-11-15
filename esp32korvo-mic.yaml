@@ -6,6 +6,7 @@ substitutions:
   device_name: "esp32korvo_mic" 
   wifi_ssid: !secret wifi_ssid
   wifi_password: !secret wifi_password
+  wifi_network: "address_ip"
   apikey: !secret enc_key_esp32korvo_mic
 
 ##### CHANGE ME END #####
