@@ -1,5 +1,4 @@
 substitutions:
-  version: "1.0"
   
 esphome:
   name: ${device_name}
