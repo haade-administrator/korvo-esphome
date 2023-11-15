@@ -49,6 +49,7 @@ wifi:
     - id: wifi_default
       ssid: ${wifi_ssid}
       password: ${wifi_password}
+      use_address: ${wifi_network}
   
   ap:
     ssid: "${device_name}"
