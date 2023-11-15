@@ -34,7 +34,11 @@ external_components:
 
 # Enable logging
 logger:
-
+##### API KEY #####
+api:
+  encryption:
+    key: ${apikey}
+    
 ##### OTA PASSWORD #####
 ota:
   password: ${wifi_password}
