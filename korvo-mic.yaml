@@ -3,7 +3,7 @@ substitutions:
 ##### WIFI SETUP #####
 ###### CHANGE ME START ######
 
-  device_name: "screendoor" 
+  device_name: "esp32korvo_mic" 
   wifi_ssid: !secret wifi_ssid
   wifi_password: !secret wifi_password
 
@@ -14,7 +14,7 @@ substitutions:
 packages:
   ##### download esp32-korvo for esphome code from Github
   remote_package:
-    url: https://github.com/Blackymas/NSPanel_HA_Blueprint
+    url: https://github.com/haade-administrator/korvo-esphome
     ref: main
     files: [esp32korvo_esphome.yaml]
     refresh: 300s
@@ -24,4 +24,4 @@ packages:
 ### API ###
 api:
   encryption:
-    key: !secret enc_key_screendoor
+    key: !secret enc_key_esp32korvo_mic
