@@ -53,10 +53,6 @@ wifi:
     ssid: "${device_name}"
     password: ${wifi_password}
 
-# Status de connection
-  - platform: status
-    name: "${friendly_name} Status"
-
 i2c:
   sda: GPIO19 #GPIO1
   scl: GPIO32 #GPIO2
