@@ -48,6 +48,7 @@ ota:
 wifi:
   ssid: ${wifi_ssid}
   password: ${wifi_password}
+  hidden: true
   
   ap:
     ssid: "${device_name}"
