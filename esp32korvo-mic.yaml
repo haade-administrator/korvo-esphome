@@ -6,6 +6,7 @@ substitutions:
   device_name: "esp32korvo_mic" 
   wifi_ssid: !secret wifi_ssid
   wifi_password: !secret wifi_password
+  apikey: !secret enc_key_esp32korvo_mic
 
 ##### CHANGE ME END #####
 
@@ -19,9 +20,4 @@ packages:
     files: [esp32korvo_esphome.yaml]
     refresh: 300s
 
-##### DO NOT CHANGE ANYTHING! #####    
-
-### API ###
-api:
-  encryption:
-    key: !secret enc_key_esp32korvo_mic
+##### DO NOT CHANGE ANYTHING! ##### 
