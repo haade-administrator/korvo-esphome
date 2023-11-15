@@ -310,4 +310,3 @@ sensor:
           - binary_sensor.template.publish:
               id: btn_record
               state: OFF
-    ```
