@@ -48,11 +48,6 @@ ota:
 wifi:
   ssid: ${wifi_ssid}
   password: ${wifi_password}
-  use_address: ${hostname}
-  
-  ap:
-    ssid: "${device_name}"
-    password: ${wifi_password}
 
 i2c:
   sda: GPIO19 #GPIO1
