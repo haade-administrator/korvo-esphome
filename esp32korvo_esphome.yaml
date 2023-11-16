@@ -177,12 +177,12 @@ switch:
 
 # Restart option
   - platform: restart
-    name: "${friendly_name} Restart"
+    name: "${device_name} Restart"
 
 light:
   - platform: esp32_rmt_led_strip
     id: led_ring
-    name: "${friendly_name} Light"
+    name: "${device_name} Light"
     pin: GPIO33 #GPIO19
     num_leds: 12
     rmt_channel: 0
@@ -210,22 +210,22 @@ light:
 
 binary_sensor:
   - platform: template
-    name: "${friendly_name} Volume Up"
+    name: "${device_name} Volume Up"
     id: btn_volume_up
   - platform: template
-    name: "${friendly_name} Volume Down"
+    name: "${device_name} Volume Down"
     id: btn_volume_down
   - platform: template
-    name: "${friendly_name} Set"
+    name: "${device_name} Set"
     id: btn_set
   - platform: template
-    name: "${friendly_name} Play"
+    name: "${device_name} Play"
     id: btn_play
   - platform: template
-    name: "${friendly_name} Mode"
+    name: "${device_name} Mode"
     id: btn_mode
   - platform: template
-    name: "${friendly_name} Record"
+    name: "${device_name} Record"
     id: btn_record
     on_press:
       - output.turn_on: pa_ctrl
@@ -242,7 +242,7 @@ binary_sensor:
 
 # Status de connection
   - platform: status
-    name: "${friendly_name} Status"
+    name: "${device_name} Status"
 
 sensor:
   - id: button_adc
@@ -315,13 +315,13 @@ sensor:
               state: OFF
 # Wifi signal
   - platform: wifi_signal
-    name: "${friendly_name} WiFi Signal"
+    name: "${device_name} WiFi Signal"
     update_interval: 60s
 
 text_sensor:
   - platform: wifi_info
     ip_address:
-      name: "${friendly_name} IP Address"
+      name: "${device_name} IP Address"
 
 time:
   platform: homeassistant
