@@ -10,4 +10,10 @@ copies the lines of code from the esp32korvo-mic.yaml file
 modify the different parameters
 Install
 
+# Connecting to UART
+- branch 2 usb one for power seconf for uart
+- press button boot
+- branch 2 usb to computer
+- connect to [https://web.esphome.io](https://web.esphome.io)
+
 [Esp32-Korvo Github Documentations](https://github.com/espressif/esp-skainet/blob/master/docs/en/hw-reference/esp32/user-guide-esp32-korvo-v1.1.md)
