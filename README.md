@@ -12,7 +12,7 @@ Install
 **After install after disconnect click on reste button 1 second for initialize**
 
 # Connecting to UART
-- branch 2 usb one for power seconf for uart
+- branch 2 usb one for power second for uart
 - press button boot
 - branch 2 usb to computer
 - connect to [https://web.esphome.io](https://web.esphome.io)
