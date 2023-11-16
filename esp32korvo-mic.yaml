@@ -6,7 +6,6 @@ substitutions:
   wifi_ssid: !secret wifi_ssid
   wifi_password: !secret wifi_password
   apikey: !secret enc_key_esp32korvo_mic
-  hostname: "esp32korvo.local"
 
 ##### CHANGE ME END #####
 
