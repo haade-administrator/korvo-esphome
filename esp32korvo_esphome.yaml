@@ -45,6 +45,15 @@ ota:
   safe_mode: true
   password: ${wifi_password}
 
+text_sensor:
+  - platform: wifi_info
+    ip_address:
+      name: "${device_name} IP Address"
+
+time:
+  platform: homeassistant
+  id: homeassistant_time
+
 #### WIFI PASSWORD ###
 wifi:
   ssid: ${wifi_ssid}
@@ -322,14 +331,5 @@ sensor:
   - platform: wifi_signal
     name: "${device_name} WiFi Signal"
     update_interval: 60s
-
-text_sensor:
-  - platform: wifi_info
-    ip_address:
-      name: "${device_name} IP Address"
-
-time:
-  platform: homeassistant
-  id: homeassistant_time
 
 captive_portal:
