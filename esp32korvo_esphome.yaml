@@ -331,3 +331,5 @@ text_sensor:
 time:
   platform: homeassistant
   id: homeassistant_time
+
+captive_portal:
