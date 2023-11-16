@@ -42,12 +42,17 @@ api:
     
 ##### OTA PASSWORD #####
 ota:
+  safe_mode: true
   password: ${wifi_password}
 
 #### WIFI PASSWORD ###
 wifi:
   ssid: ${wifi_ssid}
   password: ${wifi_password}
+
+  ap:
+    ssid: ${device_name}
+    password: ${wifi_password}
 
 i2c:
   sda: GPIO19 #GPIO1
