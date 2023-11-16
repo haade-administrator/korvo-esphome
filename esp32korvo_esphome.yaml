@@ -219,9 +219,9 @@ light:
       - addressable_color_wipe:
           name: "Wakeword"
           colors:
-            - red: 0%
-              green: 50%
-              blue: 0%
+            - red: 28
+              green: 100%
+              blue: 90%
               num_leds: 12
           add_led_interval: 40ms
           reverse: false
