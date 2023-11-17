@@ -335,5 +335,3 @@ sensor:
   - platform: wifi_signal
     name: "${device_name} WiFi Signal"
     update_interval: 60s
-
-captive_portal:
