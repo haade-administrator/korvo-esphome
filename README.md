@@ -18,3 +18,7 @@ Install
 - connect to [https://web.esphome.io](https://web.esphome.io)
 
 [Esp32-Korvo Github Documentations](https://github.com/espressif/esp-skainet/blob/master/docs/en/hw-reference/esp32/user-guide-esp32-korvo-v1.1.md)
+
+# import blueprint
+
+[![Open your Home Assistant instance and show the blueprint import dialog with a specific blueprint pre-filled.](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%3A%2F%2Fgithub.com%2Fhaade-administrator%2Fkorvo-esphome%2Fblob%2Fmain%2Fesp32korvo_blueprint.yaml)
