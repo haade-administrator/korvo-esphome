@@ -91,6 +91,7 @@ i2c:
   sda: GPIO19 #GPIO1
   scl: GPIO32 #GPIO2
   scan: true
+  frequency: 400kHz
 
 es8311:
   address: 0x18
