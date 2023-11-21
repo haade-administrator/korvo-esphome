@@ -19,7 +19,6 @@ esphome:
 esp32:
   board: esp-wrover-kit
   framework:
-    #type: esp-idf
     type: arduino
     version: recommended
 
@@ -68,8 +67,8 @@ wifi:
     password: ${wifi_password}
 
 i2c:
-  sda: GPIO19 #GPIO1
-  scl: GPIO32 #GPIO2
+  sda: GPIO19
+  scl: GPIO32
   scan: true
   frequency: 400kHz
 
@@ -82,24 +81,24 @@ es7210:
 output:
   - platform: gpio
     id: pa_ctrl
-    pin: GPIO12 #GPIO38
+    pin: GPIO12
 
 i2s_audio:
   - id: codec
-    i2s_lrclk_pin: GPIO22 #GPIO41 #ws
-    i2s_bclk_pin: GPIO25 #GPIO40 #clk
-    i2s_mclk_pin: GPIO0 #GPIO42
+    i2s_lrclk_pin: GPIO22
+    i2s_bclk_pin: GPIO25
+    i2s_mclk_pin: GPIO0
   - id: mic_adc
-    i2s_lrclk_pin: GPIO26 #GPIO9 #ws
-    i2s_bclk_pin: GPIO27 #GPIO10 #clk
-    i2s_mclk_pin: GPIO0 #GPIO20
+    i2s_lrclk_pin: GPIO26
+    i2s_bclk_pin: GPIO27
+    i2s_mclk_pin: GPIO0
 
 speaker:
   - platform: i2s_audio
     id: external_speaker
     dac_type: external
     i2s_audio_id: codec
-    i2s_dout_pin: GPIO13 #GPIO39
+    i2s_dout_pin: GPIO13
     mode: mono
 
 microphone:
@@ -107,7 +106,7 @@ microphone:
     id: external_mic
     adc_type: external
     i2s_audio_id: mic_adc
-    i2s_din_pin: GPIO36 #GPIO11
+    i2s_din_pin: GPIO36
     pdm: false
 
 voice_assistant:
@@ -201,7 +200,7 @@ light:
   - platform: esp32_rmt_led_strip
     id: led_ring
     name: "${device_name} Light"
-    pin: GPIO33 #GPIO19
+    pin: GPIO33
     num_leds: 12
     rmt_channel: 0
     rgb_order: GRB
@@ -266,7 +265,7 @@ sensor:
   - id: button_adc
     platform: adc
     internal: true
-    pin: 39 #8
+    pin: 39
     attenuation: 11db
     update_interval: 15ms
     filters:
