@@ -15,7 +15,7 @@ packages:
   ##### download esp32-korvo for esphome code from Github
   remote_package:
     url: https://github.com/haade-administrator/korvo-esphome
-    ref: main
+    ref: dev
     files: [esp32korvo_esphome.yaml]
     refresh: 300s
 
