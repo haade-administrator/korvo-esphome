@@ -133,8 +133,8 @@ voice_assistant:
   id: voice_asst
   microphone: external_mic
   speaker: external_speaker
-  noise_suppression_level: 0
-  auto_gain: 2dBFS
+  noise_suppression_level: 1
+  auto_gain: 3dBFS
   volume_multiplier: 1
   use_wake_word: false
   on_listening:
