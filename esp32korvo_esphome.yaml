@@ -134,7 +134,7 @@ voice_assistant:
   microphone: external_mic
   speaker: external_speaker
   noise_suppression_level: 0
-  auto_gain: 1dBFS
+  auto_gain: 2dBFS
   volume_multiplier: 1
   use_wake_word: false
   on_listening:
