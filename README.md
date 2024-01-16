@@ -9,7 +9,7 @@ Create an device esphome
 copies the lines of code from the esp32korvo-mic.yaml file
 modify the different parameters
 Install
-**After install after disconnect click on reste button 1 second for initialize**
+**After install disconnect and connect with click on stay pressed button 1 second for initialize**
 
 # Connecting to UART
 - branch 2 usb one for power second for uart
