@@ -87,11 +87,17 @@ i2s_audio:
   - id: codec
     i2s_lrclk_pin: GPIO22
     i2s_bclk_pin: GPIO25
-    i2s_mclk_pin: GPIO0
+    i2s_mclk_pin:
+       number: GPIO0
+       allow_other_uses: true
+       ignore_strapping_warning: true
   - id: mic_adc
     i2s_lrclk_pin: GPIO26
     i2s_bclk_pin: GPIO27
-    i2s_mclk_pin: GPIO0
+    i2s_mclk_pin:
+       number: GPIO0
+       allow_other_uses: true
+       ignore_strapping_warning: true
 
 speaker:
   - platform: i2s_audio
